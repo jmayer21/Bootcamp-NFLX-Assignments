@@ -1,0 +1,275 @@
+Question 1: Match the data type to it's correct definition. 
+
+A) Float B) Boolean C) Integer D) String E) Set F) List G) Tuple H) Dictionary
+
+  1. Unordered collection of unique, immutable items
+  2. An array of bytes that represent Unicode (text) characters
+  3. Unordered collection of mutable, indexed key-value pairs
+  4. Real numbers represented by a whole number, a decimal point and a fraction
+  5. Ordered collection of immutable items
+  6. A binary variable that has two states - True and False
+  7. Ordered collection of mutable items
+  8. Positive or negative whole numbers (no decimal places)
+
+Answer:
+  1. E
+  2. D
+  3. H
+  4. A
+  5. G
+  6. B
+  7. F
+  8. C
+
+Question 2: Which is the correct format for assigning a boolean variable in
+Python? 
+  1. variable1 is True
+  2. variable1 == True
+  3. variable1 <- True
+  4. variable1 = True
+
+Answer:
+  4. variable1 = True
+
+Use the following code block to answer Questions 3-6.
+
+output = 0
+for x in range(0,5):
+    if x % 5 == 0:
+        output += 2
+    elif x == 5:
+        output = 5
+    else:
+        output -= 1
+print(output/4)
+
+Question 3: In line 2, what is the output of range(0,5)? 
+
+  1. An iterative range object with values from 0 to 4 that can be passed to our for loop
+  2. A list object from 1 to 5 that can be passed to our for loop
+  3. A dictionary of keys from 0 to 5 each with a corresponding value of x that can be passed to our for loop
+  4. A random integer between the values of 0 to 5 that can be passed to our for loop
+
+Answer:
+  1
+
+Question 4: In line 3, what is the % operator known as? 
+
+  1. Bitwise AND
+  2. Exponentation
+  3. Modulus
+  4. Division
+
+Answer:
+  3
+
+Question 5: In line 8, what does the -= operator do? (2 points)
+
+  1. Multiply the output variable by -1 and reassign the output variable to our new calculated value
+
+  2. Subtract the output variable by 1 and reassign the output variable to our new calculated value
+
+  3. Assign the output variable to -1
+
+  4. Assign the output variable to 1
+
+Answer:
+  2.
+
+Question 6: What is the value of "output" after running the entire code
+block in Python version 3.6 and later? 
+
+  1. -0.5
+  2. 5
+  3. 0
+  4. -1
+
+Answer:
+  1. -0.5
+
+Use the following code block to answer Questions 7 through 9:
+
+basket_o_fruit = {"apples","bananas","peaches","plums","grapes","apples"}
+while(basket_o_fruit):
+    picked = basket_o_fruit.pop()
+    print(picked)
+
+Question 7: In line 1, what data type is created using the curly brackets?
+
+  1. List
+  2. Dictionary
+  3. Set
+  4. Tuple
+
+Answer:
+  3
+
+Question 8: In line 3, what does the pop() function do? 
+
+  1. Add a blank element to the beginning of the basket_o_fruit collection
+  2. Retrieve and remove the first element in the basket_o_fruit collection
+  3. Add a blank element to the end of the basket_o_fruit collection
+  4. Retrieve and remove the last element in the basket_o_fruit collection
+
+Answer:
+  4
+
+Question 9: If we run the entire code block, how many times would the
+function loop through itself? 
+
+  1. only once
+  2. infinite number of times
+  3. five times
+  4. six times
+
+Answer:
+  3
+
+Question 10: True or False - If we try and run the following code block, it
+will run successfully (without throwing an exception) 
+
+import csv
+
+with open('data.csv','r') as infile:
+csvreader = csv.reader(infile,delimiter=',')
+for row in csvreader:
+    print(','.join(row))
+
+Answer:
+False
+
+Question 11: What is the expected output of secondlist if we were to run
+the following code block? 
+
+firstlist = [4,8,12,12,20,4,0]
+secondlist = [x/4 for x in firstlist]
+
+  1. [1.0,2.0,3.0,3.0,5.0,1.0,0.0]
+  2. [0,4,8,8,16,0,-4]
+  3. [4,4]
+  4. [4.0,8.0,12.0,12.0,20.0,4.0,0.0]
+
+Answer:
+  1
+
+Question 12: Match the following labels to their corresponding components
+in the image below
+
+custom function
+
+      1. Statement that tells the custom function what value to send back when called
+      2. Positional, mandatory arguments passed to the function
+      3. Optional, keyword argument passed to the function
+      4. The function name that is being defined
+
+Answer:
+  1. B
+  2. A
+  3. D
+  4. C
+
+Use the following code block to answer Questions 13-15:
+
+basiclabels = ["A","B","C","D","E"]
+basiclist = [20,25,30,35,40]
+
+newcollect1 = dict(zip(basiclabels,basiclist))
+newcollect2 = list(map(lambda x: x/5 + x,basiclist))
+
+newcollect3 = []
+for val in basiclist:
+    newcollect3.append(val/5+val)
+
+Question 13: On line 4, what is the expected output of the dict(zip())
+function? 
+  1. {20: 'A', 25: 'B', 30: 'C', 35: 'D', 40: 'E'}
+  2. {"A","B","C","D","E","1","2","3","4","5"}
+  3. {'A': 20, 'B': 25, 'C': 30, 'D': 35, 'E': 40}
+  4. ['A', 'B', 'C', 'D', 'E', 20, 25, 30, 35, 40]
+
+Answer:
+  3
+
+Question 14: On line 5, what is the expected output of the list(map())
+function? 
+
+  1. [24.0, 30.0, 36.0, 42.0, 48.0]
+  2. {20:x/5 + x, 25:x/5 + x, 30:x/5 + x, 35:x/5 + x, 40:x/5 + x}
+  3. {24.0, 30.0, 36.0, 42.0, 48.0}
+  4. {20:24.0, 25:30.0, 30:36.0, 35:42.0, 40:48.0}
+
+Answer:
+  1
+
+Question 15: True or False - After running the code block, the variables
+newcollect2 and newcollect3 are functionally identical. 
+
+Answer:
+True
+
+Use the following code block to answer Questions 16-18
+
+# Dependencies
+import requests as req
+from config import api_key
+
+url = f"http://www.omdbapi.com/?apikey={api_key}&t="
+
+# Who was the director of the movie Aliens?
+try:
+    movie = req.get(url + "Aliens").json()
+    print("The director of Aliens was " + movie["Director"] + ".")
+except ConnectionError:
+    print("Could not parse from API")
+except:
+    print("Something else happened")
+
+Question 16: In line 4, how many expressions are contained within the f-
+string? i.e., how many components of the string are determined using
+variables? 
+
+  1. 0
+  2. 1
+  3. 2
+  4. 3
+
+Answer:
+  2
+
+Question 17: In lines 7 and 10, what is the main purpose of a try-except
+block? 
+
+  1. To test out the indented code but not error out or break the entire program if something goes wrong
+  2. To loop the code as many times as possible until the code breaks
+  3. To repeat the code until it works
+
+Answer:
+  1
+
+Question 18: Imagine our requests.get() function on line 7 errors out
+with a Timeout exception. Which of the following print statements will our
+Python code block produce? 
+  1. "The director of Aliens was ."
+  2. "Could not parse from API"
+  3. "Something else happened"
+
+Answer:
+  3
+
+Question 19: What does the continue statement mean in Python? 
+
+  1. Exit the loop completely and execute the next statement outside of the current loop
+  2. Wait for user input before proceeding to next statement
+  3. Ignore all other logic and statements in a current iteration of a loop, proceed to next iteration within the same loop.
+
+Answer:
+  3
+
+Question 19: What does the break statement mean in Python? 
+
+  1. Exit the loop completely and execute the next statement outside of the current loop
+  2. Wait for user input before proceeding to next statement
+  3. Ignore all other logic and statements in a current iteration of a loop, proceed to next iteration within the same loop.
+
+Answer:
+  1
